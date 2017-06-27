@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+
+<style>
+   .box1{
+      width: 100px;
+      height: 100px;
+      margin:auto;
+      text-align: center;
+      background: lightgreen;
+      transition: all 1000ms;
+   }
+
+   .box2{
+      width: 100px;
+      height: 100px;
+      margin:auto;
+      margin-top: 200px;
+      text-align: center;
+      background: lightgreen;
+      transition: all 1000ms;
+   }
+    .box1:hover{
+      transform: scale(2);
+      opacity: 0.2;
+   }
+   .box2:hover{
+      transform: scale(3);
+      opacity: 0.5;
+   }
+
+
+   .box1:active{
+      transform: translate(100px,0px) rotate(45deg);
+   }
+   .box2:active{
+      transform: translate(-100px,0px) rotate(-45deg);
+   }
+
+</style>
+</head>
+
+<body>
+   <div class = "box1">버튼1</div>
+   <div class = "box2">버튼2</div>
+</body>
+</html>
