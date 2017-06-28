@@ -5,14 +5,14 @@
 	<title>Document</title>
 	<style>
 		.easyticket{
-			width: 1000px;
+			width: 300px;
 			margin: 0px auto;
 			background: white;
 		}
 		.easyticket1{
 			font-size: 15px;
 			color: grey;
-		
+			margin-right : auto;
 		}
 		.title_image{
 			display: inline-block;
@@ -28,99 +28,86 @@
 			font-weight: bold;
 			color: blue;
 		}
-		.firsttext{
+		.firsttext_background{
 			background: #6fa8bc;
 			color: white;
 		}
+		.firsttext{
+			width: 300px;
+			margin: auto;
+		}
 		.text{
-			display: block;
-			
-		}
-		.bus_text1{
-			font-size: 30px;
-			font-weight: bold;
-			width: 1000px;
-			margin: 0px auto;
-		}
-		.bus_text2{
-			font-size: 30px;
-			font-weight: bold;
-			width: 1000px;
-			margin: 0px auto;
-			
-		}
-		.bus_text3{
-			font-size: 40px;
-			font-weight: bold;
-			width: 1000px;
-			margin: 0px auto;
-			
-		}
-		.bus_text4{
-			font-size: 30px;
-			width: 1000px;
-			margin: 0px auto;
-			
+			display: inline-block;
+			margin: 10px auto;		
 		}
 		.photo{
 			display: inline-block;
-			width: 1000px;
-			margin: 0px auto;
+			margin:auto;
 		}
+		.bus_text1{
+			font-size: 20px;
+			font-weight: bold;
+		}
+		.bus_text2{
+			font-size: 20px;
+			font-weight: bold;
+		}
+		.bus_text3{
+			font-size: 30px;
+			font-weight: bold;			
+		}
+		.bus_text4{
+			font-size: 20px;	
+			font-weight: bold;
+		}	
 		.secondtext{
 			background: #5d95b6;
 			font-size: 20px;
-			
+			height: 100px;
 		}
 		.bus_text5{
-			width: 1000px;
+			width: 300px;
 			margin: 0px auto;
 		}
 		.bus_text6{
-			width: 1000px;
+			width: 300px;
 			margin: 0px auto;
 		}
 		.bus_text7{
-			width: 1000px;
-			margin: 0px auto;
-			padding-bottom: 10px;
+			width: 300px;
+			margin: 0px auto;		
 		}
 		.icon{
-			background: #6173b1;
-			
+			background: #6173b1;			
 		}
 		.icon1{
-			width: 1000px;
+			height:110px;
+			width: 300px;
 			margin: 0px auto;
-			padding-top: 20px;
-			padding-bottom: 10px;
 		}
 		.icon2{
-			width: 1000px;
+			height: 120px;
+			width: 300px;
 			margin: 0px auto;
-			padding-bottom: 20px; 
 		}
 		.box1{
 			display: inline-block;
 			width: 100px;
       		height: 100px;
-      		margin: 0px auto;
      		background: white;
      		transition: all 1000ms;
 		}
 		.box2{
 			display: inline-block;
 			width: 100px;
-			height: 100px;
-			margin: 0px auto;
+			height: 100px;	
 			background: white;
 			transition: all 1000ms;
 		}
 		.box3{
 			display: inline-block;
 			width: 100px;
-			height: 100px;
-			margin: 0px auto;
+			height: 100px;			
 			background: white;
 			transition: all 1000ms;
 		}
@@ -128,7 +115,6 @@
 			display: inline-block;
 			width: 100px;
 			height: 100px;
-			margin: 0px auto;
 			background: white;
 			transition: all 1000ms;
 		}
@@ -147,30 +133,57 @@
      		opacity: 0.2;
      		transform: translate(0px,100px);
    		}
-		img{
+		.bus_img1{
 			width: 90px;
 			height: 90px;
 			
+		}
+		.bus_img2{
+			width: 90px;
+			height: 90px;
+			
+		}
+		.bus_img3{
+			width: 90px;
+			height: 90px;
+			
+		}
+		.bus_img4{
+			width: 90px;
+			height: 90px;
+			
+		}
+		.blueicon_img{
+			width: 30px;
+			height: 30px;
+		}
+		.phone_img{
+			height: 110px;
+			width: auto;
+			margin: auto;
 		}
 	</style>
 </head>
 <body>
 	<div class = "easyticket">
 		<div class = "easyticket1">이지티켓</div>
-		<span class = "title_image"><img src="C:\repo\img\title.png"></img></span>
-		<span class = "easy">easy</span>
-		<span class = "ticket">ticket</span>
+		<div class = "title_image"><img class = "blueicon_img" src="C:\repo\img\title.png"></img></div>
+		<div class = "easy">easy</div>
+		<div class = "ticket">ticket</div>
 	</div>
-	<div class = "firsttext">
-		<span class="text">
-			<div class = "bus_text1">고속버스모바일 앱으로</div>
-			<div class = "bus_text2">고속버스 예매가</div>
-			<div class = "bus_text3">확!달라</div>
-			<div class = "bus_text4">집니다</div>
-		</span>
-		<span class="photo">
-			<img src="C:\repo\img\bus4.png"></img>
-		</span>
+	<div class = "firsttext_background">
+		<div class = "firsttext">
+			<div class="text">
+				<div class = "bus_text1">고속버스모바일 앱으로</div>
+				<div class = "bus_text2">고속버스 예매가</div>
+				<div class = "bus_text3">확!달라</div>
+				<div class = "bus_text4">집니다</div>
+			</div>
+		
+		<div class="photo">
+			<img class = "phone_img" src="C:\repo\img\bus4.png"></img>
+		</div>
+		</div>
 	</div>
 	<div class = "secondtext">
 		<div class = "bus_text5">고속버스모바일로</div>
@@ -179,12 +192,12 @@
 	</div>
 	<div class = "icon">
 		<div class = "icon1">
-			<span class = "box1"><img src="C:\repo\img\bus1.png"></img></span>
-			<span class = "box2"><img src="C:\repo\img\bus1.png"></img></span>
+			<div class = "box1"><img class = "bus_img1" src="C:\repo\img\bus1.png"></img></div>
+			<div class = "box2"><img class = "bus_img2" src="C:\repo\img\bus1.png"></img></div>
 		</div>
 		<div class = "icon2">
-			<span class = "box3"><img src="C:\repo\img\bus2.png"></img></span>
-			<span class = "box4"><img src="C:\repo\img\bus3.png"></img></span>
+			<div class = "box3"><img class = "bus_img3" src="C:\repo\img\bus2.png"></img></div>
+			<div class = "box4"><img class = "bus_img4" src="C:\repo\img\bus3.png"></img></div>
 		</div>
 		
 	</div>
