@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+
+	<script   src="https://code.jquery.com/jquery-3.2.1.js"   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="   crossorigin="anonymous"></script> 
+
 	<style>
 		.easyticket{
 			font-size: 10px;
@@ -42,10 +45,6 @@
 			display: inline-block;
 			margin: 10px auto;		
 		}
-		.photo{
-			display: inline-block;
-			margin:auto;
-		}
 		.bus_text1{
 			font-size: 20px;
 			font-weight: bold;
@@ -62,6 +61,20 @@
 			font-size: 20px;	
 			font-weight: bold;
 		}	
+		.photo{
+			display: inline-block;
+			margin:auto;
+		}
+		.phone_img{
+			height: 110px;
+			width: auto;
+			
+		}
+		.make_image_big{
+			height: 300px;
+			width: auto;
+			
+		}
 		.secondtext{
 			background: #5d95b6;
 			font-size: 20px;
@@ -159,17 +172,22 @@
 			width: 30px;
 			height: 30px;
 		}
-		.phone_img{
-			height: 110px;
-			width: auto;
-			margin: auto;
+
+		.expand_margin{
+			margin-bottom: 100px;
+		}
+		.expand_image{
+			transform: scale(2);
+		}
+		.disappear_box{
+			opacity: 0;
 		}
 	</style>
 </head>
 <body>
 	<div class = "easyticket">이지티켓</div>
 	<div class = "title_easyticket">
-		<div class = "title_image"><img class = "blueicon_img" src="C:\repo\img\title.png"></img></div>
+		<div class = "title_image" onclick="title_image_click('title_image')"><img class = "blueicon_img" src="C:\repo\img\title.png"></img></div>
 		<div class = "easy">easy</div>
 		<div class = "ticket">ticket</div>
 	</div>
@@ -182,8 +200,8 @@
 				<div class = "bus_text4">집니다</div>
 			</div>
 		
-		<div class="photo">
-			<img class = "phone_img" src="C:\repo\img\bus4.png"></img>
+		<div class="photo" >
+			<img class = "phone_img" onclick="phone_image_click('phone_img')"  src="C:\repo\img\bus4.png"></img>
 		</div>
 		</div>
 	</div>
@@ -193,16 +211,41 @@
 		<div class = "bus_text7">탑승까지 가능합니다.</div>
 	</div>
 	<div class = "icon">
-		<div class = "icon1">
-			<div class = "box1"><img class = "bus_img1" src="C:\repo\img\bus1.png"></img></div>
-			<div class = "box2"><img class = "bus_img2" src="C:\repo\img\bus1.png"></img></div>
+		<div class = "icon1" >
+			<div class = "box1" onclick="box1_click('box1')"><img class = "bus_img1" src="C:\repo\img\bus1.png"></img></div>
+			<div class = "box2" onclick="box2_click('box2')"><img class = "bus_img2" src="C:\repo\img\bus1.png"></img></div>
 		</div>
 		<div class = "icon2">
-			<div class = "box3"><img class = "bus_img3" src="C:\repo\img\bus2.png"></img></div>
-			<div class = "box4"><img class = "bus_img4" src="C:\repo\img\bus3.png"></img></div>
+			<div class = "box3" onclick="box3_click('box4')"><img class = "bus_img3" src="C:\repo\img\bus2.png"></img></div>
+			<div class = "box4" onclick="box4_click('box3')"><img class = "bus_img4" src="C:\repo\img\bus3.png"></img></div>
 		</div>
 		
 	</div>
 
 </body>
+
+<script type="text/javascript">
+	function title_image_click(classname){
+		
+		$('.title_image').toggleClass('expand_margin');
+	}
+	function phone_image_click(classname){
+		
+		$('.phone_img').toggleClass('make_image_big');
+	}
+	function box1_click(classname){	
+		$('.box1').toggleClass('expand_image');
+	}
+	function box2_click(classname){	
+		$('.box2').toggleClass('expand_image');
+	}
+	function box3_click(classname){	
+		$('.box4').toggleClass('disappear_box');
+	}
+	function box4_click(classname){	
+		$('.box3').toggleClass('disappear_box');
+	}
+
+</script>
+
 </html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script   src="https://code.jquery.com/jquery-3.2.1.js"   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="   crossorigin="anonymous"></script>   
+
+	<style type="text/css">
+		.box{
+			background: #FF6868;
+			width: 100px;
+			height: 100px;
+			margin: auto;
+			border: 1px solid black;
+		}
+		.color{
+			background: #EAED61;
+		}
+		.color2{
+			background: lightgreen;
+		}
+		.box1{
+			width: 100px;
+			height: 100px;
+			margin: auto;
+			border: 1px solid black;
+			transition: all 1000ms;
+		}
+		
+	</style>
+
+</head>
+<body>
+	<div class = "box">버튼</div>	
+	<div class = "box1 " onclick="color_change('box1')">안녕</div>
+	<div class = "box1 color" onclick="color_change('this')">하하</div>
+</body>
+<script type="text/javascript">
+	function color_change(classname){
+		
+		$('.box1').toggleClass('color2');
+	}
+</script>
+</html>

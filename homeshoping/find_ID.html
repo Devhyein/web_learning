@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		.name{
+			display: inline;
+		}
+		.write_name{
+			display: inline;
+		}
+		.email{
+			display: inline;
+		}
+		.write_email{
+			display: inline;
+		}
+		.search_ID{
+			background: #244169;
+			color: white;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div class="title">아이디 찾기</div>
+	<div class="choose_mathod">
+		<input type="radio" name="check_mathod" value="email"  checked>이메일로 찾기
+		<input type="radio" name="check_mathod" value="phone" >핸드폰으로 찾기<br><br>
+	</div>
+	<div class="name_part">
+		<div class="name">이름</div>
+		<input type="text" class="write_name">
+	</div>
+	<div class="email_part">
+		<div class="email">이메일</div>
+		<input type="text" class="write_email">
+	</div>
+	<input type="submit" value="조회" class="search_ID">
+</body>
+</html>
