@@ -223,6 +223,7 @@
 	</div>
 
 </body>
+<<<<<<< HEAD:easyticket.html
 
 <script type="text/javascript">
 	function title_image_click(classname){
@@ -249,3 +250,6 @@
 </script>
 
 </html>
+=======
+</html>
+>>>>>>> 36c53238409493b8d73472f773c8a4e95f338d04:easyticket.html
